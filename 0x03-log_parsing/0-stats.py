@@ -12,7 +12,8 @@ import sys
 
 def displayMessage(status_codes, total_file_size):
     """
-    This Take in the a dict of status codes and total_file_size (int) and print a formatted message
+    This Take in the a dict of status codes and total_file_size (int) 
+    and print a formatted message
     """
 
     print(f"File size: {total_file_size}")
@@ -38,15 +39,15 @@ def boot():
 
     try:
         for line in sys.stdin:
-            line_as_list = line.split()
-            line_as_list = line_as_list[::-1]
+            line_as_list = line.split() # turn the line into list
+            line_as_list = line_as_list[::-1] # reverse the line
 
             if len(line_as_list) > 2:
                 counter += 1
 
                 if counter <= 10:
-                    total_file_size += int(line_as_list[0])
-                    code = line_as_list[1]
+                    total_file_size += int(line_as_list[0]) # get the file size
+                    code = line_as_list[1] # get the status code
 
                     if code in status_codes.keys():
                         status_codes[code] += 1
