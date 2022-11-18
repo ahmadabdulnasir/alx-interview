@@ -12,8 +12,12 @@ import sys
 
 def displayMessage(status_codes, total_file_size):
     """
-    This Take in the a dict of status codes and total_file_size (int) 
-    and print a formatted message
+    This print a formatted message
+    Args:
+        status_codes: dict of status codes (dict)
+        total_file_size: total of the file (int)
+    Returns:
+        None
     """
 
     print(f"File size: {total_file_size}")
