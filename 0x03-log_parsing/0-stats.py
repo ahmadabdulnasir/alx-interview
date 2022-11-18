@@ -53,7 +53,8 @@ def boot():
                 if (counter == 10):
                     displayMessage(status_codes, total_file_size)
                     counter = 0
-
+    except KeyboardInterrupt:
+        print(" ---  Keyboard Interupt with Ctrl+C\n\t Exiting ....")
     finally:
         displayMessage(status_codes, total_file_size)
 
