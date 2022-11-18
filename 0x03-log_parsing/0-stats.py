@@ -12,7 +12,7 @@ import sys
 
 def displayMessage(status_codes, total_file_size):
     """
-        This Take in the a dict of status codes and total_file_size (int) and print a formatted message
+    This Take in the a dict of status codes and total_file_size (int) and print a formatted message
     """
 
     print(f"File size: {total_file_size}")
@@ -33,12 +33,12 @@ def boot():
         "403": 0,
         "404": 0,
         "405": 0,
-        "500": 0
-   }
+        "500": 0,
+    }
 
     try:
         for line in sys.stdin:
-            line_as_list = line.split() 
+            line_as_list = line.split()
             line_as_list = line_as_list[::-1]
 
             if len(line_as_list) > 2:
@@ -48,9 +48,9 @@ def boot():
                     total_file_size += int(line_as_list[0])
                     code = line_as_list[1]
 
-                    if (code in status_codes.keys()):
+                    if code in status_codes.keys():
                         status_codes[code] += 1
-                if (counter == 10):
+                if counter == 10:
                     displayMessage(status_codes, total_file_size)
                     counter = 0
     except KeyboardInterrupt:
@@ -58,7 +58,6 @@ def boot():
     finally:
         displayMessage(status_codes, total_file_size)
 
+
 if __name__ == "__main__":
     boot()
-
-
