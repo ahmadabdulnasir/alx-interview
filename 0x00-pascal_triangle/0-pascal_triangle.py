@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-0x00-pascal_triangle
+__author__ = 'Ahmad Abdulnasir Shuaib <me@ahmadabdulnasir.com.ng>'
+__homepage__ = https://ahmadabdulnasir.com.ng
+__copyright__ = 'Copyright (c) 2022, salafi'
+__version__ = "0.01t"
 """
+
 
 
 def pascal_triangle(n):
