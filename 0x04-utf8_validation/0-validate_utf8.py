@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+__author__ = 'Ahmad Abdulnasir Shuaib <me@ahmadabdulnasir.com.ng>'
+__homepage__ = https://ahmadabdulnasir.com.ng
+__copyright__ = 'Copyright (c) 2022, salafi'
+__version__ = "0.01t"
+"""
 
 
 def validUTF8(data):
@@ -36,4 +43,4 @@ def validUTF8(data):
         return True
 
     return False
-
+    
