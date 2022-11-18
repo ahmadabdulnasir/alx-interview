@@ -43,15 +43,16 @@ def boot():
 
     try:
         for line in sys.stdin:
-            line_as_list = line.split() # turn the line into list
-            line_as_list = line_as_list[::-1] # reverse the line
+            line_as_list = line.split()  # turn the line into list
+            line_as_list = line_as_list[::-1]  # reverse the line
 
             if len(line_as_list) > 2:
                 counter += 1
 
                 if counter <= 10:
-                    total_file_size += int(line_as_list[0]) # get the file size
-                    code = line_as_list[1] # get the status code
+                    # get the file size
+                    total_file_size += int(line_as_list[0])
+                    code = line_as_list[1]  # get the status code
 
                     if code in status_codes.keys():
                         status_codes[code] += 1
@@ -66,4 +67,3 @@ def boot():
 
 if __name__ == "__main__":
     boot()
-
