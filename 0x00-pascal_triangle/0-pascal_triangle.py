@@ -10,7 +10,8 @@ __version__ = "0.01t"
 
 
 def pascal_triangle(n):
-    """This function returns a list of lists of integers representing the Pascal’s triangle of n
+    """This function returns a list of lists of integers 
+    representing the Pascal’s triangle of n
     """
     res = []
     if n > 0:
