@@ -21,8 +21,8 @@ def findOpenedBox(opened_boxes):
 
 def canUnlockAll(boxes):
     """
-       A method that check if all the boxes can be opened given n number of locked boxes
-       Each box may contain keys to the other boxes.
+       A method that check if all the boxes can be opened given n number 
+       of locked boxes. Each box may contain keys to the other boxes.
        boxes: list of list
 
        Return: bool (True if all boxes can be opened else False)
@@ -60,10 +60,5 @@ def canUnlockAll(boxes):
     return len(seen_boxes) == len(boxes)
 
 
-def boot():
-    canUnlockAll([[]])
-
-
 if __name__ == "__main__":
-    boot()
-    
+    canUnlockAll([[]])
